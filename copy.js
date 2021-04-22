@@ -4,8 +4,8 @@ const Copier = require("./Copier");
 
 const clone = new Copier(34);
 
-clone.get().then((val) => console.log(val)); // After 1 sec: { msg: 'Hi!' }
+clone.get().then((val) => console.log(val)); // Example after 1 sec: { msg: 'Hi!' }
 
-clone.delete().catch((err) => console.error(err)); // After 2 sec: Error: Cannot Delete
+clone.delete().catch((err) => console.error(err)); // Example after 2 sec: Error: Cannot delete!
 
-console.log(clone.copy()); // Immediately: { msg: 'Hi!' }
+console.log(clone.copy()); // Immediate example: { msg: 'Hi!' }
